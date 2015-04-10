@@ -11,4 +11,4 @@ Password-Strength-Checker is a simple jquery plugin for measuring the strength o
 
  To deactivate monitoring pass "destroy" as argument
 
- $("#txtPassword").monitorPassword("destroy");
+ eg: $("#txtPassword").monitorPassword("destroy");
