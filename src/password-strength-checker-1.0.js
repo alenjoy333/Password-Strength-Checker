@@ -53,7 +53,7 @@ Email   : alenjoy333@gmail.com
 
    var passwordChecker=function(){
           var passwordCheckerMethods ={};
-          passwordCheckerMethods.passwordBox;
+          passwordCheckerMethods.passwordBox=null;
           passwordCheckerMethods.commonPasswords=[];
           passwordCheckerMethods.password="";
           passwordCheckerMethods.passwordCharcters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789/*-+,./;][=`-)(*&^%$#@!~?><:}{|";
@@ -76,7 +76,7 @@ Email   : alenjoy333@gmail.com
           passwordCheckerMethods.getCommonPassowrds =function()
           {
 
-             $.getJSON("10kPass.json",function(data){
+             $.getJSON("10kPass-min.json",function(data){
                 passwordCheckerMethods.commonPasswords =data;
                 passwordCheckerMethods.setEvents();
              });
