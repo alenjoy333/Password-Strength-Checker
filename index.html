@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/password-checker.css">
+<title>Password Strength Checker</title>
+</head>
+
+<body>
+
+<h1>Password Strength Checker </h1>
+
+<div>
+
+Password-Strength-Checker is a simple jquery plugin for measuring the strength of a password. When user types a password the plugin  will  check it with  10000 common passwords and if the user's password is a common password it will inform the user . The plugin is also capable  for creating strong passwords if the user needs one.
+ 
+<br>
+
+ <h3>Usage</h3>
+
+ you can initialize the monitoring using <b>checkPassword()</b>
+
+
+<br>
+<br>
+ eg: $("#txtPassword").monitorPassword();
+
+<br>
+<br>
+ To deactivate monitoring pass <b>"destroy"</b> as argument
+
+<br>
+<br>
+ $("#txtPassword").monitorPassword("destroy");
+<br>
+<br>
+</div>
+
+
+<a href="#" id="activate">Activate Monitoring</a> &nbsp&nbsp
+<a href="#" id="deactivate">Deactivate Monitoring</a>
+<br>
+<br>
+<input type="password" id="txtPassword"/>
+
+
+<script type="text/javascript" src="plugin/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="plugin/password-strength-checker-1.0.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#activate").on("click",function(){
+$("#txtPassword").monitorPassword();
+});
+$("#deactivate").on("click",function(){
+$("#txtPassword").monitorPassword("destroy");
+});
+
+});
+
+</script>
+</body>
+
+
+</html>

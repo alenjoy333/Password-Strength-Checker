@@ -189,7 +189,7 @@ Email   : alenjoy333@gmail.com
         return passwordCheckerMethods;
      }();
  
-$.fn.checkPassword=function(type){
+$.fn.monitorPassword=function(type){
   if(type !="destroy")
   {
    passwordChecker.initialize(this);
