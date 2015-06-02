@@ -14,4 +14,4 @@ Password Strength Checker is a simple jquery plugin for measuring the strength o
 
  eg: $("#txtPassword").monitorPassword("destroy");
 
- blog : http://jquerypasswordstrengthchecker.blogspot.in/
+
