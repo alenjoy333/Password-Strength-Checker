@@ -24,8 +24,6 @@ A modern TypeScript monorepo — v2 of the original 2015 jQuery plugin — with 
   />
 </a>
 
-<sub>Demo preview · replace <code>docs/demo-placeholder.png</code> with an animated GIF when ready</sub>
-
 </div>
 
 ---
