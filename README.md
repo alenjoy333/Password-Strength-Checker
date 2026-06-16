@@ -19,7 +19,7 @@ A modern TypeScript monorepo — v2 of the original 2015 jQuery plugin — with 
 
 <a href="https://alenjoy333.github.io/Password-Strength-Checker/">
   <img
-    src="./docs/demo-placeholder.png"
+    src="./docs/demo-screenshot.png"
     alt="Password Strength Checker demo — password input with strength meter, breach check, and generate button"
     width="720"
   />
