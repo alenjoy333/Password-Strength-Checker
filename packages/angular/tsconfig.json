@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "experimentalDecorators": true,
+    "importHelpers": true
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "partial"
+  },
+  "include": ["src/**/*.ts"]
+}

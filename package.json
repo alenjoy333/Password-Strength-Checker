@@ -1,0 +1,15 @@
+{
+  "name": "pwd-meter-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @pwd-meter/core && npm run build -w @pwd-meter/react && npm run build -w @pwd-meter/vue && npm run build -w @pwd-meter/angular",
+    "clean": "npm run clean -ws --if-present",
+    "test": "npm run test -w @pwd-meter/core"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

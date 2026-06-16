@@ -1,0 +1,43 @@
+{
+  "name": "@pwd-meter/react",
+  "version": "2.0.0",
+  "description": "React hook and UI components for password strength checking.",
+  "license": "MIT",
+  "author": "Alen Joy <alenjoy333@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alenjoy333/Password-Strength-Checker.git",
+    "directory": "packages/react"
+  },
+  "keywords": ["password", "react", "hook", "security"],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": ["dist"],
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean && cp src/styles.css dist/styles.css",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@pwd-meter/core": "2.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "react": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}

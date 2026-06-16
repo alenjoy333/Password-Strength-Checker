@@ -1,0 +1,45 @@
+{
+  "name": "@pwd-meter/vue",
+  "version": "2.0.0",
+  "description": "Vue composables and components for password strength checking.",
+  "license": "MIT",
+  "author": "Alen Joy <alenjoy333@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alenjoy333/Password-Strength-Checker.git",
+    "directory": "packages/vue"
+  },
+  "keywords": ["password", "vue", "composable", "security"],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": ["dist"],
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly -p tsconfig.build.json && cp src/styles.css dist/styles.css",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@pwd-meter/core": "2.0.0"
+  },
+  "peerDependencies": {
+    "vue": ">=3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vue": "^3.5.17",
+    "vue-tsc": "^2.2.10"
+  }
+}

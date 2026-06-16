@@ -1,0 +1,49 @@
+{
+  "name": "@pwd-meter/core",
+  "version": "2.0.0",
+  "description": "Modern password strength analysis with optional HIBP breach checks and secure generation.",
+  "license": "MIT",
+  "author": "Alen Joy <alenjoy333@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alenjoy333/Password-Strength-Checker.git",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "password",
+    "strength",
+    "security",
+    "zxcvbn",
+    "hibp",
+    "pwned-passwords"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "clean": "rm -rf dist",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/zxcvbn": "^4.4.5",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

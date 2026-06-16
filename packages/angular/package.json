@@ -1,0 +1,47 @@
+{
+  "name": "@pwd-meter/angular",
+  "version": "2.0.0",
+  "description": "Angular services and standalone components for password strength checking.",
+  "license": "MIT",
+  "author": "Alen Joy <alenjoy333@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alenjoy333/Password-Strength-Checker.git",
+    "directory": "packages/angular"
+  },
+  "keywords": ["password", "angular", "security"],
+  "type": "module",
+  "main": "./dist/fesm2022/pwd-meter-angular.mjs",
+  "module": "./dist/fesm2022/pwd-meter-angular.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/fesm2022/pwd-meter-angular.mjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json && cp src/styles.css dist/styles.css",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@pwd-meter/core": "2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=17",
+    "@angular/core": ">=17",
+    "@angular/forms": ">=17"
+  },
+  "devDependencies": {
+    "@angular/common": "^19.2.14",
+    "@angular/compiler": "^19.2.14",
+    "@angular/compiler-cli": "^19.2.14",
+    "@angular/core": "^19.2.14",
+    "@angular/forms": "^19.2.14",
+    "ng-packagr": "^19.2.2",
+    "typescript": "^5.8.3"
+  }
+}
