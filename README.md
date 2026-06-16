@@ -11,18 +11,21 @@ A modern TypeScript monorepo — v2 of the original 2015 jQuery plugin — with 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Version](https://img.shields.io/badge/version-2.0.0-2563eb)](CHANGELOG.md)
+[![Live Demo](https://img.shields.io/badge/demo-live-16a34a)](https://alenjoy333.github.io/Password-Strength-Checker/)
 
-[Features](#features) · [Packages](#packages) · [Quick Start](#quick-start) · [Privacy](#privacy--hibp) · [Changelog](./CHANGELOG.md)
+[Features](#features) · [Packages](#packages) · [Quick Start](#quick-start) · [Live Demo](https://alenjoy333.github.io/Password-Strength-Checker/) · [Privacy](#privacy--hibp) · [Changelog](./CHANGELOG.md)
 
 <br />
 
-<a href="./docs/demo-placeholder.png">
+<a href="https://alenjoy333.github.io/Password-Strength-Checker/">
   <img
     src="./docs/demo-placeholder.png"
     alt="Password Strength Checker demo — password input with strength meter, breach check, and generate button"
     width="720"
   />
 </a>
+
+<sub><a href="https://alenjoy333.github.io/Password-Strength-Checker/">Open live demo</a> · React sample app in <code>examples/react-demo</code></sub>
 
 </div>
 
@@ -274,6 +277,24 @@ npm install          # install all workspace dependencies
 npm run build        # build core → react → vue → angular
 npm test             # run core unit tests (Vitest)
 npm run clean        # remove dist folders
+npm run dev:react    # run the React demo locally
+```
+
+### Live demo (GitHub Pages)
+
+The React sample app in `examples/react-demo` deploys automatically on push to `master` via [GitHub Actions](./.github/workflows/deploy-demo.yml).
+
+**Live URL:** [https://alenjoy333.github.io/Password-Strength-Checker/](https://alenjoy333.github.io/Password-Strength-Checker/)
+
+One-time setup in your repo settings:
+
+1. **Settings → Pages → Build and deployment**
+2. Set **Source** to **GitHub Actions**
+
+Build locally for Pages:
+
+```bash
+npm run build:demo:pages
 ```
 
 ### Publishing
